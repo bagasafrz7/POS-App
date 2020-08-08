@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/history.css" />
+    <title>History</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-12 col-sm-12 food-items">
+            <div class="nav-detail">
+              <div class="row">
+                <div class="col-1 col-md-1 burger-menu">
+                  <a href="./index.html">
+                    <img src="./img/icon/menu.png" alt="" />
+                  </a>
+                  <!-- <div class="nav flex-column side-nav">
+                    <img src="./img/icon/fork.png" alt="" />
+                    <img src="./img/icon/clipboard.png" alt="" />
+                    <img src="./img/icon/add.png" alt="" />
+                  </div> -->
+                </div>
+                <div class="col-9 col-md-10">
+                  <h2 class="text-center">History</h2>
+                </div>
+                <div class="col-1 col-md-1">
+                  <img src="./img/icon/search.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Side Nav -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2 col-md-1 side-nav flex-column">
+          <div class="detail-sidenav">
+            <nav class="nav flex-column">
+              <a class="nav-link" href="./home-select.html">
+                <img src="./img/icon/fork.png" alt="" />
+              </a>
+              <a class="nav-link" href="./history.html">
+                <img src="./img/icon/clipboard.png" alt="" />
+              </a>
+              <a
+                class="nav-link"
+                href="#"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                <img src="./img/icon/add.png" alt="" />
+              </a>
+            </nav>
+          </div>
+        </div>
+        <div class="col-10 col-md-10 col-sm-10">
+          <div class="row">
+            <div class="card-history">
+              <div class="btn-income">
+                <h5>Today's Income</h5>
+                <h2>Rp. 1.000.000</h2>
+                <p>+2% Yesterday</p>
+              </div>
+              <div class="btn-orders">
+                <h5>Orders</h5>
+                <h2>3.270</h2>
+                <p>+5% Last Week</p>
+              </div>
+              <div class="btn-years">
+                <h5>This Year's Income</h5>
+                <h2>Rp. 100.000.000.000</h2>
+                <p>+10% Last Year</p>
+              </div>
+            </div>
+            <div class="chart">
+              <div class="col-12 col-md-12 col-sm-12">
+                <!-- <canvas id="myChart" width="1200" height="500"></canvas> -->
+                <!-- <canvas id="canvas"></canvas> -->
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-6 col-md-6 col-sm-6">
+                        <h2>Revenue</h2>
+                      </div>
+                      <div class="col-6 col-md-6 col-sm-6 text-right">
+                        <span class="badge badge-pill badge-secondary"
+                          >Month</span
+                        >
+                      </div>
+                    </div>
+                    <canvas id="canvas"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recent-order">
+              <!-- <div class="col-12 col-md-12 col-sm-12"> -->
+                <div class="detail-recent">
+                  <div class="row">
+                    <div class="col-6 col-md-6 col-sm-6">
+                      <h2>Recent Order</h2>
+                    </div>
+                    <div class="col-6 col-md-6 col-sm-6 text-right">
+                      <span class="badge badge-pill badge-secondary"
+                        >Today</span
+                      >
+                    </div>
+                    <table class="table text-center">
+                      <thead>
+                        <tr>
+                          <th scope="col">INVOICES</th>
+                          <th scope="col">CASHIER</th>
+                          <th scope="col">DATE</th>
+                          <th scope="col">ORDERS</th>
+                          <th scope="col">AMOUNT</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">#10928</th>
+                          <td>Cashier 1</td>
+                          <td>06 October 2019</td>
+                          <td>Ice Tea, Salad With peanut sauce</td>
+                          <td>Rp. 120.000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-sm-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">
+                    With supporting text below as a natural lead-in to
+                    additional content.
+                  </p>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Side Nav -->
+
+    <!-- Modal Add-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add Item</h5>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="name" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Image</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="name" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Price</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control price" id="price" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Category</label>
+                <div class="col-sm-10">
+                  <select id="inputState" class="form-control">
+                    <option selected>Category</option>
+                    <option>Category 1</option>
+                    <option>Category 2</option>
+                    <option>Category 3</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary btn-cancel"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary btn-add">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Add-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+      integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Chart JS -->
+    <script src="./js/Chart.js"></script>
+    <script src="./js/utils.js"></script>
+    <!-- <script>
+    </script> -->
+    <script>
+      var MONTHS = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+      var config = {
+        type: "line",
+        data: {
+          labels: [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+          ],
+          datasets: [
+            {
+              label: "Last Month",
+              backgroundColor: window.chartColors.red,
+              borderColor: window.chartColors.red,
+              data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+              ],
+              fill: false,
+            },
+            {
+              label: "This Month",
+              fill: false,
+              backgroundColor: window.chartColors.blue,
+              borderColor: window.chartColors.blue,
+              data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+              ],
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          title: {
+            display: true,
+            text: "",
+          },
+          tooltips: {
+            mode: "index",
+            intersect: false,
+          },
+          hover: {
+            mode: "nearest",
+            intersect: true,
+          },
+          scales: {
+            xAxes: [
+              {
+                display: true,
+                scaleLabel: {
+                  display: true,
+                  labelString: "Month",
+                },
+              },
+            ],
+            yAxes: [
+              {
+                display: true,
+                scaleLabel: {
+                  display: true,
+                  labelString: "Value",
+                },
+              },
+            ],
+          },
+        },
+      };
+
+      window.onload = function () {
+        var ctx = document.getElementById("canvas").getContext("2d");
+        window.myLine = new Chart(ctx, config);
+      };
+
+      document
+        .getElementById("randomizeData")
+        .addEventListener("click", function () {
+          config.data.datasets.forEach(function (dataset) {
+            dataset.data = dataset.data.map(function () {
+              return randomScalingFactor();
+            });
+          });
+
+          window.myLine.update();
+        });
+
+      var colorNames = Object.keys(window.chartColors);
+      document
+        .getElementById("addDataset")
+        .addEventListener("click", function () {
+          var colorName =
+            colorNames[config.data.datasets.length % colorNames.length];
+          var newColor = window.chartColors[colorName];
+          var newDataset = {
+            label: "Dataset " + config.data.datasets.length,
+            backgroundColor: newColor,
+            borderColor: newColor,
+            data: [],
+            fill: false,
+          };
+
+          for (var index = 0; index < config.data.labels.length; ++index) {
+            newDataset.data.push(randomScalingFactor());
+          }
+
+          config.data.datasets.push(newDataset);
+          window.myLine.update();
+        });
+
+      document.getElementById("addData").addEventListener("click", function () {
+        if (config.data.datasets.length > 0) {
+          var month = MONTHS[config.data.labels.length % MONTHS.length];
+          config.data.labels.push(month);
+
+          config.data.datasets.forEach(function (dataset) {
+            dataset.data.push(randomScalingFactor());
+          });
+
+          window.myLine.update();
+        }
+      });
+
+      document
+        .getElementById("removeDataset")
+        .addEventListener("click", function () {
+          config.data.datasets.splice(0, 1);
+          window.myLine.update();
+        });
+
+      document
+        .getElementById("removeData")
+        .addEventListener("click", function () {
+          config.data.labels.splice(-1, 1); // remove the label first
+
+          config.data.datasets.forEach(function (dataset) {
+            dataset.data.pop();
+          });
+
+          window.myLine.update();
+        });
+    </script>
+  </body>
+</html>

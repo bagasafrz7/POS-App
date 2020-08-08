@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "Airbnb";
+  src: url(../fonts/AirbnbCerealMedium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Airbnb";
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.navbar .nav-detail .burger-menu {
+  margin-left: 20px;
+}
+
+.navbar .nav-detail img {
+  width: 30px;
+  padding: 5px 0;
+}
+
+.navbar .food-items {
+  padding: 10px 0;
+  /* border: 1px solid black; */
+}
+
+.side-cart .cart h4 {
+  padding: 15px 0;
+}
+
+.eclipse {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background: #57cad5;
+  position: absolute;
+  top: 15px;
+  left: 250px;
+  color: #ffffff;
+}
+
+.side-nav {
+  background-color: #ffffff;
+  margin: 0;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); */
+}
+
+.side-nav img {
+  width: 30px;
+  margin: 15px 0;
+}
+
+.side-nav .detail-sidenav .nav .nav-link {
+  padding: 10px 20px;
+}
+
+.main-content {
+  background: rgba(190, 195, 202, 0.3);
+  padding-top: 20px;
+}
+
+.main-content .main-food img {
+  /* width: 100%;
+  height: 50%; */
+  /* width: 250px; */
+  border-radius: 10px 10px 0 0;
+  transition: transform 0.5s, filter 1.5s ease-in-out;
+  filter: grayscale(0);
+}
+
+.main-content .main-food img:hover {
+  filter: grayscale(50%);
+  transform: scale(1.1);
+}
+
+.main-content .main-food p {
+  font-size: 25px;
+  margin: 5px 0 -2px 0;
+}
+
+.main-food {
+  margin-top: -10px;
+}
+
+.main-content .card {
+  background: none;
+  border: none;
+  padding-top: 10px;
+  /* padding-top: 50px; */
+}
+
+/* .main-content .card img {
+  border-radius: 0;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 50%;
+} */
+
+.main-content .main-food img {
+  border-radius: 0;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 50%;
+}
+
+.main-content .card p {
+  margin-top: 10px;
+}
+
+/* .main-content .card h2.card-title {
+  margin-top: -100px;
+} */
+
+.main-cart {
+  padding-top: 20px;
+}
+
+.main-cart h4 {
+  font-size: 30px;
+}
+
+.main-cart p {
+  font-size: 20px;
+  color: #cecece;
+}
+
+/* Modal */
+.modal-dialog .modal-body input,
+select {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.modal-dialog .modal-body .form-group label {
+  color: #000;
+}
+
+.modal-dialog .modal-body input.price {
+  width: 70%;
+}
+.modal-dialog .modal-body select {
+  width: 50%;
+  color: grey;
+}
+
+.modal-dialog .modal-footer button {
+  width: 20%;
+}
+
+.modal-dialog .modal-footer button.btn-cancel {
+  background: #f24f8a;
+  border: 1px solid #f24f8a;
+  transition: 0.8s ease-in-out;
+}
+
+.modal-dialog .modal-footer button.btn-cancel:hover {
+  border: 1px solid #dd3f79;
+  background-color: #dd3f79;
+}
+
+.modal-dialog .modal-footer button.btn-add {
+  background: #57cad5;
+  border: 1px solid #57cad5;
+  transition: 0.8s ease-in-out;
+}
+
+.modal-dialog .modal-footer button.btn-add:hover {
+  border: 1px solid #2fafbb;
+  background-color: #2fafbb;
+}
+@media (max-width: 768px) {
+  .navbar .side-cart {
+    width: 10%;
+    position: absolute;
+    top: 325px;
+    left: 0;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .eclipse {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #57cad5;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+  }
+
+  .main-cart {
+    border-top: 1px solid rgb(200, 200, 200);
+    border-radius: 50px 50px 0 0;
+    box-shadow: 0px -6px 22px 2px rgba(0, 0, 0, 0.49);
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar .side-cart h4 {
+    font-size: 20px;
+  }
+
+  .navbar .side-cart {
+    font-size: 10px;
+  }
+
+  .eclipse {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    position: absolute;
+    top: 22px;
+    left: 60px;
+  }
+}
